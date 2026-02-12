@@ -1,0 +1,9 @@
+trigger:
+  - main   # Runs pipeline when code is pushed to main branch
+
+pool:
+  vmImage: 'ubuntu-latest'   # Agent machine
+
+steps:
+  - script: echo "Hello, Pipeline!"
+    displayName: 'Run a simple echo'
